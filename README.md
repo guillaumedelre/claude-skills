@@ -23,7 +23,7 @@ Un **skill** est un fichier de documentation structuré (`SKILL.md`) qui se char
 
 ## 🗂️ Skills disponibles
 
-### Symfony 7.4 Components (38 skills)
+### Symfony 7.4 Components (44 skills)
 
 <details>
 <summary><b>Core Components</b></summary>
@@ -34,6 +34,7 @@ Un **skill** est un fichier de documentation structuré (`SKILL.md`) qui se char
 - **symfony-7-4-dependency-injection** - Service container, DI, Autowiring, Tags
 - **symfony-7-4-config** - Configuration loading, validation, caching
 - **symfony-7-4-event-dispatcher** - Event system, listeners, subscribers
+- **symfony-7-4-security** - Authentication, authorization, voters, firewalls, password hashing
 
 </details>
 
@@ -42,9 +43,20 @@ Un **skill** est un fichier de documentation structuré (`SKILL.md`) qui se char
 
 - **symfony-7-4-form** - Form creation, validation, theming, events
 - **symfony-7-4-validator** - Constraints, custom validators, validation groups
+- **symfony-7-4-serializer** - Serialize/deserialize, normalizers, encoders, groups, discriminators
 - **symfony-7-4-property-access** - Property paths, nested access
 - **symfony-7-4-property-info** - Property metadata, type extraction
 - **symfony-7-4-type-info** - Type system, reflection
+
+</details>
+
+<details>
+<summary><b>Communication & I/O</b></summary>
+
+- **symfony-7-4-http-client** - Outbound HTTP, scoped clients, retries, mocking, SSE
+- **symfony-7-4-mailer** - Email transports, TemplatedEmail, attachments, async sending
+- **symfony-7-4-translation** - i18n, ICU MessageFormat, XLIFF/YAML catalogues, async providers
+- **symfony-7-4-scheduler** - Recurring tasks, cron triggers, AsCronTask, AsPeriodicTask
 
 </details>
 
@@ -97,7 +109,17 @@ Un **skill** est un fichier de documentation structuré (`SKILL.md`) qui se char
 
 - **api-platform-4-2** - REST & GraphQL API creation, operations, DTOs, state providers/processors
 - **doctrine-orm-3** - ORM, entities, repositories, DQL, query builder
+- **doctrine-migrations-3** - Schema versioning, doctrine:migrations:diff/migrate, AbstractMigration
 - **frankenphp-1** - Modern PHP application server, worker mode, real-time
+
+### AI & LLM
+
+- **symfony-0-6-ai** - Symfony AI agents, chat, vector stores, RAG, embeddings, tool calling
+
+### Testing
+
+- **phpunit-12** - PHPUnit 12 attributes, assertions, mocks, data providers, coverage
+- **zenstruck-foundry-2** - Object factories, PersistentProxyObjectFactory, stories, fixtures
 
 ## 🚀 Utilisation
 

@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Repository Overview
 
-This is a collection of **Claude Code skills** that provide specialized documentation and reference material for various PHP frameworks and libraries, particularly focused on Symfony 7.4 ecosystem, API Platform, Doctrine ORM, and FrankenPHP.
+This is a collection of **Claude Code skills** that provide specialized documentation and reference material for various PHP frameworks and libraries, particularly focused on Symfony 7.4 ecosystem, API Platform, Doctrine ORM/Migrations, FrankenPHP, and PHP testing tools (PHPUnit 12, Zenstruck Foundry 2).
 
 Skills are self-contained documentation packages that Claude Code can load to provide expert guidance on specific libraries and frameworks. Each skill provides:
 - Quick reference examples for common use cases
@@ -16,10 +16,14 @@ Skills are self-contained documentation packages that Claude Code can load to pr
 
 ```
 claude-skills/
-├── symfony-7-4-{component}/    # Symfony 7.4 components (38 total)
+├── symfony-7-4-{component}/    # Symfony 7.4 components (44 total)
+├── symfony-0-6-ai/             # Symfony AI components (experimental)
 ├── api-platform-4-2/           # API Platform 4.2 reference
 ├── doctrine-orm-3/             # Doctrine ORM 3 reference
-└── frankenphp-1/               # FrankenPHP 1.x reference
+├── doctrine-migrations-3/      # Doctrine Migrations 3.x reference
+├── frankenphp-1/               # FrankenPHP 1.x reference
+├── phpunit-12/                 # PHPUnit 12 reference
+└── zenstruck-foundry-2/        # Zenstruck Foundry 2 reference
 
 Each skill directory contains:
 ├── SKILL.md                    # Main skill file with metadata and quick reference
@@ -106,12 +110,20 @@ Place detailed documentation in `references/` subdirectory:
 ## Symfony Component Coverage
 
 The repository includes skills for most major Symfony 7.4 components:
-- Core components: console, http-foundation, http-kernel, dependency-injection
-- Data handling: form, validator, serializer, property-access, property-info
-- Utilities: filesystem, finder, process, cache, lock
-- Infrastructure: messenger, event-dispatcher, workflow
+- Core components: console, http-foundation, http-kernel, dependency-injection, security
+- Data handling: form, validator, serializer, property-access, property-info, type-info
+- Communication: http-client, mailer, translation, scheduler
+- Utilities: filesystem, finder, process, cache, lock, semaphore
+- Infrastructure: messenger, event-dispatcher, workflow, runtime
 - Format handling: yaml, mime, var-dumper, var-exporter
-- Specialized: clock, css-selector, dom-crawler, browser-kit, expression-language
+- Specialized: clock, css-selector, dom-crawler, browser-kit, expression-language, ldap, intl, json-path, uid
+
+## Non-Symfony Skills
+
+- **API & ORM**: api-platform-4-2, doctrine-orm-3, doctrine-migrations-3
+- **Runtime**: frankenphp-1
+- **AI**: symfony-0-6-ai (experimental Symfony AI bundle)
+- **Testing**: phpunit-12, zenstruck-foundry-2
 
 Each follows the same structure pattern but focuses on its specific domain.
 
