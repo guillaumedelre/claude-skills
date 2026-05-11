@@ -31,6 +31,12 @@ When contributing to an open source project (fixing an issue, submitting a PR):
 - Detect available tools from `composer.json` (scripts section), `Makefile`, `justfile`, CI configuration (`.github/workflows/`, `.gitlab-ci.yml`), or `pyproject.toml`
 - Do not open a PR with a failing test or quality violation unless the failure pre-existed and is documented
 
+## Pull request target
+
+- Always open the PR against the **upstream repository** (`gh pr create --repo upstream/repo --head fork:branch`), never against the fork
+- Verify with `gh pr list --repo upstream/repo --author <handle>` after creation to confirm the PR landed in the right place
+- If a PR was accidentally opened on the fork, close it with a comment pointing to the upstream PR, then open the correct one
+
 ## Notifying the maintainer
 
 - After the PR is created, post a comment on the original issue to notify the maintainer: mention the PR number and a one-sentence summary of what was done
